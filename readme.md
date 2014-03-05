@@ -16,6 +16,8 @@ Windows Phone Steam App
 1. https://portablesteamwebapi.codeplex.com/
 2. http://steamcommunity.com/dev
 3. http://www.reddit.com/r/windowsphone/comments/1zd0xv/i_am_an_app_developer_what_app_does_the_community/
+4. http://blog.andrescanelones.me/post/56733266176/steam-chat-app-mockup-for-windows-phone
+5. https://portablesteamwebapi.codeplex.com/SourceControl/latest
 
 ## Tools
 1. Git and your favorite client, [SourceTree](http://www.sourcetreeapp.com/) is pretty good
