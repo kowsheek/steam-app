@@ -7,14 +7,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" DataContext="{Binding Main, Mode=OneWay, Source={StaticResource Locator}}">
 
-    <!--Data context is set to sample data above and LayoutRoot contains the root grid where all other page content is placed-->
+    <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -41,24 +40,18 @@
          -->
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-        </StackPanel>
+		<StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+			<TextBlock Text="Steam App" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+		</StackPanel>
 
-        <!--ContentPanel contains LongListSelector and LongListSelector ItemTemplate. Place additional content here-->
+        <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <phone:LongListSelector x:Name="MainLongListSelector" Margin="0,0,-12,0" ItemsSource="{Binding Items}" SelectionChanged="MainLongListSelector_SelectionChanged">
-                <phone:LongListSelector.ItemTemplate>
-                    <DataTemplate>
-                      <StackPanel Margin="0,0,0,17">
-                          <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                          <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
-                      </StackPanel>
-                    </DataTemplate>
-                </phone:LongListSelector.ItemTemplate>
-            </phone:LongListSelector>
-        </Grid>
+			<TextBlock Text="username" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"></TextBlock>
+			<TextBox VerticalAlignment="Top" Margin="0,37,0,0" Text="{Binding Username, Mode=TwoWay}"></TextBox>
+			<TextBlock Text="password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,109,0,0"></TextBlock>
+			<PasswordBox VerticalAlignment="Top" Margin="0,136,0,0" Password="{Binding Password, Mode=TwoWay}"></PasswordBox>
+			<Button Command="{Binding LoginCommand}"  Content="Login" VerticalAlignment="Top" HorizontalAlignment="Right" Width="165" Margin="0,208,10,0"></Button>
+		</Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
             aligned on common boundaries.  The image has a top margin of -32px to

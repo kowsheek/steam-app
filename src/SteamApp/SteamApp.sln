@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamApp", "SteamApp\SteamApp.csproj", "{128074A7-83F1-441D-8360-B2304896CD62}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portable", "Portable\Portable.csproj", "{9F8E0857-07B5-4309-BD07-608C6D274850}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BD3A3F70-D599-4649-BE9D-1AA2249D8E4B}"
@@ -13,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BD3A3F
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamApp", "SteamApp\SteamApp.csproj", "{F982C662-7000-4785-93CD-E99BE73DA9AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,24 +24,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{128074A7-83F1-441D-8360-B2304896CD62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{128074A7-83F1-441D-8360-B2304896CD62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{128074A7-83F1-441D-8360-B2304896CD62}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{128074A7-83F1-441D-8360-B2304896CD62}.Debug|ARM.ActiveCfg = Debug|ARM
-		{128074A7-83F1-441D-8360-B2304896CD62}.Debug|ARM.Build.0 = Debug|ARM
-		{128074A7-83F1-441D-8360-B2304896CD62}.Debug|ARM.Deploy.0 = Debug|ARM
-		{128074A7-83F1-441D-8360-B2304896CD62}.Debug|x86.ActiveCfg = Debug|x86
-		{128074A7-83F1-441D-8360-B2304896CD62}.Debug|x86.Build.0 = Debug|x86
-		{128074A7-83F1-441D-8360-B2304896CD62}.Debug|x86.Deploy.0 = Debug|x86
-		{128074A7-83F1-441D-8360-B2304896CD62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{128074A7-83F1-441D-8360-B2304896CD62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{128074A7-83F1-441D-8360-B2304896CD62}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{128074A7-83F1-441D-8360-B2304896CD62}.Release|ARM.ActiveCfg = Release|ARM
-		{128074A7-83F1-441D-8360-B2304896CD62}.Release|ARM.Build.0 = Release|ARM
-		{128074A7-83F1-441D-8360-B2304896CD62}.Release|ARM.Deploy.0 = Release|ARM
-		{128074A7-83F1-441D-8360-B2304896CD62}.Release|x86.ActiveCfg = Release|x86
-		{128074A7-83F1-441D-8360-B2304896CD62}.Release|x86.Build.0 = Release|x86
-		{128074A7-83F1-441D-8360-B2304896CD62}.Release|x86.Deploy.0 = Release|x86
 		{9F8E0857-07B5-4309-BD07-608C6D274850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9F8E0857-07B5-4309-BD07-608C6D274850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F8E0857-07B5-4309-BD07-608C6D274850}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -50,6 +32,24 @@ Global
 		{9F8E0857-07B5-4309-BD07-608C6D274850}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F8E0857-07B5-4309-BD07-608C6D274850}.Release|ARM.ActiveCfg = Release|Any CPU
 		{9F8E0857-07B5-4309-BD07-608C6D274850}.Release|x86.ActiveCfg = Release|Any CPU
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Debug|ARM.Build.0 = Debug|ARM
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Debug|ARM.Deploy.0 = Debug|ARM
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Debug|x86.ActiveCfg = Debug|x86
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Debug|x86.Build.0 = Debug|x86
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Debug|x86.Deploy.0 = Debug|x86
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Release|ARM.ActiveCfg = Release|ARM
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Release|ARM.Build.0 = Release|ARM
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Release|ARM.Deploy.0 = Release|ARM
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Release|x86.ActiveCfg = Release|x86
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Release|x86.Build.0 = Release|x86
+		{F982C662-7000-4785-93CD-E99BE73DA9AF}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
