@@ -3,7 +3,21 @@
   <Application.Resources>
     <local:LocalizedStrings xmlns:local="clr-namespace:SteamApp" x:Key="LocalizedStrings" />
     <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:vm="clr-namespace:SteamApp.ViewModel" />
-  </Application.Resources>
+	<DataTemplate x:Key="PanoramaTemplate">
+		<Grid>
+			<ContentPresenter>
+				<TextBlock Text="{Binding}" FontSize="80" Margin="0,20,0,0" />
+			</ContentPresenter>
+		</Grid>
+	</DataTemplate>
+	<DataTemplate x:Key="PanoramaItemTemplate">
+		<Grid>
+			<ContentPresenter>
+				<TextBlock Text="{Binding}" FontSize="35" Margin="-10,0,0,0" />
+			</ContentPresenter>
+		</Grid>
+	</DataTemplate>
+	</Application.Resources>
   <Application.ApplicationLifetimeObjects>
     <!--Required object that handles lifetime events for the application-->
     <shell:PhoneApplicationService Launching="Application_Launching" Closing="Application_Closing" Activated="Application_Activated" Deactivated="Application_Deactivated" />
