@@ -43,15 +43,18 @@ namespace SteamApp.ViewModel
             ////}
 
             SimpleIoc.Default.Register<LoginViewModel>();
+			SimpleIoc.Default.Register<DashboardViewModel>();
         }
 
-        public LoginViewModel Main
+        public LoginViewModel LoginVM
         {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<LoginViewModel>();
-            }
+            get { return ServiceLocator.Current.GetInstance<LoginViewModel>(); }
         }
+
+	    public DashboardViewModel DashboardVM
+	    {
+		    get { return ServiceLocator.Current.GetInstance<DashboardViewModel>(); }
+	    }
         
         public static void Cleanup()
         {
